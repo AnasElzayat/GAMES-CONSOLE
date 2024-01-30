@@ -1,0 +1,153 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+  .logo{
+    color:#2196f3;
+    font-weight: bold;
+    font-size: 20px;
+  }
+ nav a {
+padding:20px;
+display: inline-block;
+flex:1;
+text-decoration: none;
+color:#333;
+
+ }
+nav a:hover{
+    border-top:4px solid #2196f3;
+    background-color: #fafafa;
+    color:#2196f3;
+    transition: 0.5s;
+}
+.text{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.text h1{
+    letter-spacing: -2px;
+    font-weight: bold;
+}
+.text p{
+    line-height: 1.8;
+    font-size: 20px;
+    color: gray;
+}
+.row-color{
+    background-color: #ddd;
+    padding: 40px 100px;
+    position: relative;
+    height:430px;
+}
+.row .image{
+    animation-name: go-up;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    position: absolute;
+    right:0;
+    top:5px;
+}
+@keyframes go-up {
+    to{
+        top: -50px;
+    }
+}
+/* Small */
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column !important;
+    }
+    .row-color {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .main-padding{
+        padding: 40px !important;
+     }
+     
+}
+.games{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.item{
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    
+}
+.games .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid #3333339c; */
+    border: 3px solid #33333395;
+
+
+}
+.header-content{
+    font-size: 40px;
+    color:#333;
+    font-weight: bold;
+    text-decoration: none;
+     color:#2196f3;
+    border-bottom: 2px solid gray;
+}
+ .main-padding{
+    padding: 40px 100px;
+ }
+ .item .person-image{
+position: absolute;
+    width: 100px;
+    top: -30%;
+    right: 0;
+    border-radius: 50%;
+    height: 100px;
+    border: 10px solid #e2e3e5;
+ }
+ .item i{
+    font-size: 25px;
+
+
+ }
+ .contact{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+ }
+ .contact input ,.contact textarea{
+    padding: 10px;
+ outline: none;
+ margin-bottom: 20px;
+ border:2px solid #e2e3e5;
+ border-radius: 6px;
+ }
+ input[type='submit']{
+    background-color: #2196f3;
+
+  }
+  .left-image{
+     background-image: url(images/features-02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .div_image{
+height: 50%;
+width:100%;
+  }
+  .div_image img{
+    height: 300px;
+    width:100%;
+    border-radius: 6px;
+
+  }
+ .games:hover .item{
+    margin-top: -10px; 
+    transition: 1s;
+ }
+  
